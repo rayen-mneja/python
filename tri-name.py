@@ -42,7 +42,7 @@ def tri_nom(t,n):
                  k=1
                  vix=False  
                  espas(ch1,)
-                 while not(vix==True or k==len(ch1)):
+                 while not(vix==True or k==len(ch2)):
                      
 
 def espas()
