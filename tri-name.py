@@ -25,13 +25,13 @@ def romplir_note(t,n):
         t[i]=int(input('t2['+str(i)+']'))
         while not(0<=t[i]<=20):
             t[i]=int(input('t2['+str(i)+']'))
-def tri_nom(t1,t2,n):
+def tri_nom(n):
      echenge=True
      i=1
      ch1=t1[i]
      while not(echenge==False or i==n-1):
          echenge=False
-         for j in range(i+1,n):
+         for j in range(i+1,n+1):
              ch2=t1[j]
              if ord(ch1[0])<ord(ch2[0]):
                  aux=t1[i]
@@ -43,7 +43,11 @@ def tri_nom(t1,t2,n):
                  t2[j]=avux
          i+=1
 def affiche(t1,t2,n):
-    for i in range (1,n):
+    for i in range (1,n+1):
         print(t1[i],t2[i])
-
+saisir_n()
+romplir_nom(t1,n)
+romplir_note(t2,n)
+tri_nom(n)
+affiche(t1,t2,n)
 
