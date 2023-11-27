@@ -26,6 +26,11 @@ def tri_bulle(t,n):
                 t[i+1]=aux
                 echange=True
         n=n-1
+def cherch():
+    aux=False
+    for i in range(n):
+        if t[i]=='10':
+            aux=True
 t=array([int]*50)
 n=4
 romplir (t,n)
