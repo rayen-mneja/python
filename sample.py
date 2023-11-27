@@ -1,6 +1,6 @@
 from numpy import*
 def afich(t,n):
-    for i in range(n+1):
+    for i in range(n):
         print(t[i])
 def romplir (t,n):
     for i in range (n):
@@ -15,8 +15,19 @@ def tri_selection(t,n):
             aux=t [p]
             t[p]=t[i]
             t[i]=aux
+def tri_bulle(t,n):
+    echange=True
+    while echange==True and n!=1:
+        echange=False
+        for i in range (n-1) :
+            if t[i]>t[i+1]:
+                aux = t[i]
+                t[i]=t[i+1]
+                t[i+1]=aux
+                echange=True
+        n=n-1
 t=array([int]*50)
 n=4
 romplir (t,n)
-tri_selection(t,n)
+tri_bulle(t,n)
 afich(t,n)

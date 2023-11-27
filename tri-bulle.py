@@ -37,9 +37,9 @@ def point(ch):
         s=s+ord(ch[i])
     return s
 def affiche(t1,t2,n):
-    print('t1=',t1[0],'t2=',t2[0])
+    print('t2=',t1[0],'t1=',t2[0])
     for i in range(1,n):
-        print('t1=',t1[i])
+        print('t2=',t1[i])
 saisir_n()
 remplir_t(t1,n)
 tri(t1,t2,n)
