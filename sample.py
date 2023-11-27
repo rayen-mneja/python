@@ -31,7 +31,7 @@ def cherch(t,n):
     for i in range(n):
         if t[i]=='10':
             aux=True
-    
+    return aux
 t=array([int]*50)
 n=4
 romplir (t,n)
