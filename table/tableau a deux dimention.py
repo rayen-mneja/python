@@ -7,6 +7,7 @@ def saisir_dimontion():
     while not(2<=NL<=20 and 1<=NC<=20):
         NL=int(input('NL='))
         NC=int(input('NC='))
+    #5ater mechi nzid il somme mte3 kol ligne m3a il tableau 
     NC+=1
 #kol ligne fih des colone mechi na3mlou il parcour mte3hom
 def romplir_MAT(M,NL,NC):
