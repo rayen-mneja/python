@@ -20,12 +20,13 @@ def romplir_MAT(M,NL,NC):
 #bech na3mlou il somme mte3 les colones fi kol linge
 def somme(M,NL,NC):
     for i in range(NL):
-        #kol mara ye7seb les colone mte3 
+        #kol mara ye7seb il somme mte3 il valeur mt3 les colone mte3 kol linge
         s=0
         for j in range(NC-1):
             s+=M[i,j]
         M[i,NC-1]=s
 def affiche(M,NL,NC):
+    #bech na3mel il affichage :1+2+3=6
     for i in range(NL):
         ch=''
         for j in range(NC-1):
