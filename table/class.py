@@ -1,1 +1,2 @@
-class 
+n=int(input('n='))
+print(n)
